@@ -1,4 +1,4 @@
-import elementConfig from '../elementConfig';
+import elementConfig from './elementConfig';
 
 	function getSelectors(){
 		let selectors;
