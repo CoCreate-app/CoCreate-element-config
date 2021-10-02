@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/CoCreate-app/CoCreate-element-config/compare/v1.0.0...v1.0.1) (2021-10-02)
+
+
+### Bug Fixes
+
+* add elementConfig.js ([cbe7704](https://github.com/CoCreate-app/CoCreate-element-config/commit/cbe770485cb2bd803d838215cc1562f070fd7f76))
+
 # 1.0.0 (2021-10-02)
 
 
