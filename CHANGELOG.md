@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/CoCreate-app/CoCreate-element-config/compare/v1.1.0...v1.2.0) (2021-10-04)
+
+
+### Features
+
+* supports running functions stored on config container elememt ([bf5ea00](https://github.com/CoCreate-app/CoCreate-element-config/commit/bf5ea004a0cb2941a283832e1e667b74e45a381d))
+
 # [1.1.0](https://github.com/CoCreate-app/CoCreate-element-config/compare/v1.0.2...v1.1.0) (2021-10-04)
 
 
