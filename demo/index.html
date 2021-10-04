@@ -1,30 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="https://cdn.cocreate.app/favicon.ico" type="image/ico" sizes="16x16">
-    <title>element-config | CoCreateJS</title>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="https://cdn.cocreate.app/favicon.ico" type="image/ico" sizes="16x16">
+        <title>element-config | CoCreateJS</title>
 
-    <!-- CoCreate CSS CDN -->
-    <link rel="stylesheet" href="https://cdn.cocreate.app/element-config/latest/CoCreate-element-config.min.css" type="text/css" />
-  
-  </head>
-  
-  <body>
-  
+    </head>
 
-    <script>
-      var config = {
-            apiKey: 'c2b08663-06e3-440c-ef6f-13978b42883a',
-            organization_Id: '5de0387b12e200ea63204d6c'
-      }
-    </script>
-    
-    <!-- CoCreate JS CDN -->
-    <script src="https://cdn.cocreate.app/element-config/latest/CoCreate-element-config.min.js"></script>
+    <body id="a">
+        <h1 id="h1">hello 1</h1>
+        <h2 id="h2">hello 2</h2>
+        
+        <element-config config-target="#d" id="b" collection="" document_id="" name="" style="display:none">
+            <config selector="*" editable="true" draggable="true" selectable="true" hoverable="true" mouseover="true"></config>
+            <config selector="h1, h2" editable="true" draggable="true" selectable="true" hoverable="true" mouseover="true"></config>
+        </element-config>
 
-  </body>
+        <script id="c" config-target="#a" collection="" document_id="" name="">
+            [
+                { selector: "*", draggable: true, droppable: true, selectable: true, hoverable: true},
+                { selector: "h1, h2", draggable: true, droppable: true, selectable: true, hoverable: true}
+            ];
+        </script>
+
+        <script>
+        	var config = {
+        		apiKey: '',
+        		organization_Id: '',
+        		host: ''
+        	}
+        </script>
+
+        <!--<script src="https://cdn.cocreate.app/element-config/latest/CoCreate-element-config.min.js"></script>-->
+        <script src="../../../../CoCreateJS/dist/CoCreate.js"></script>
+        <!--<script src="../dist/CoCreate-element-config.js"></script>-->
+
+    </body>
+
 </html>
