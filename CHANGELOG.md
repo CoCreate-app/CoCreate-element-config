@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/CoCreate-app/CoCreate-element-config/compare/v1.0.2...v1.1.0) (2021-10-04)
+
+
+### Features
+
+* support for using elements or script tag as a config ([57cd476](https://github.com/CoCreate-app/CoCreate-element-config/commit/57cd4765b37629ab8788ae488b48ea69b4a86e32))
+
 ## [1.0.2](https://github.com/CoCreate-app/CoCreate-element-config/compare/v1.0.1...v1.0.2) (2021-10-03)
 
 
