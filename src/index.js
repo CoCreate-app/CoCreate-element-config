@@ -17,7 +17,6 @@ function initElement(element) {
     for (let targetElement of targetElements) {
     	targetElement.elementConfig = getElementConfig(element);
     	targetElement.setAttribute('config', '');
-    	console.log(targetElement, targetElement.elementConfig);
     }
 }
 
@@ -34,7 +33,6 @@ function getElementConfig(element){
 	        });
 	        
 	        var obj = JSON.parse(jsonStr);
-	        console.log(obj); 
 	        elementConfig.push(obj);
 	    }
 	}
@@ -53,22 +51,44 @@ function getElementConfig(element){
 }
 
 	
-function checkElementConfig(element, options, elementConfig){
-	if (!elementConfig) 
+export function checkElementConfig(element, options, elementConfig){
+	let configedEl;
+	if (!elementConfig && element.ownerDocument.elementConfig) {
 		elementConfig =	element.ownerDocument.elementConfig;
-	if (!elementConfig) 
-		elementConfig =	element.closest('[config]');
+		configedEl = element.ownerDocument;
+	}
+	else {
+		configedEl = element.closest('[config]');
+		if(configedEl)
+			elementConfig =	configedEl.elementConfig;
+	}
 	for(let config of configMatch(elementConfig, element)) {
 		for(let option of options) {
-			if(config[option] === true) {
+			if (option == 'editable') {
+				if(config[option] === true) {
+					if (CoCreate.text.hasSelection(element) && element.closest('[contenteditable="true"]'))
+						return true;
+					else return;
+				}
+			}
+			else if(config[option] === true) {
 				return true;
+			}
+			// else if (config[option]){
+			// 	var func = new Function(config[option]);
+			// 	if (func(element, option))
+			// 		return true;
+			// }
+			else if (config[option] == 'function'){
+				if (configedEl.configFunctions[option](element, option))
+					return true;
 			}
 			else return false;
 		}
 	}
 }
 
-function* configMatch(elementConfig, element) {
+export function* configMatch(elementConfig, element) {
   for (let config of elementConfig) {
     // if (!Array.isArray(config.selector))
     //   config.selector = [config.selector];
