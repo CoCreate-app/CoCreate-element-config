@@ -1,3 +1,11 @@
+## [1.2.2](https://github.com/CoCreate-app/CoCreate-element-config/compare/v1.2.1...v1.2.2) (2021-10-05)
+
+
+### Bug Fixes
+
+* if elementConfig not found return ([524eb35](https://github.com/CoCreate-app/CoCreate-element-config/commit/524eb351073f4a16fccacd133f4b940990d33185))
+* website_id in CoCreate.config ([7dacd1d](https://github.com/CoCreate-app/CoCreate-element-config/commit/7dacd1de9d92247df6363ce2a9948c57e93b7acf))
+
 ## [1.2.1](https://github.com/CoCreate-app/CoCreate-element-config/compare/v1.2.0...v1.2.1) (2021-10-04)
 
 
