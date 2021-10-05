@@ -61,6 +61,7 @@ export function checkElementConfig(element, options, elementConfig){
 		configedEl = element.closest('[config]');
 		if(configedEl)
 			elementConfig =	configedEl.elementConfig;
+		else return;
 	}
 	for(let config of configMatch(elementConfig, element)) {
 		for(let option of options) {
