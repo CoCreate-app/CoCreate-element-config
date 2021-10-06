@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/CoCreate-app/CoCreate-element-config/compare/v1.2.3...v1.2.4) (2021-10-06)
+
+
+### Bug Fixes
+
+* Add @cocreate/selection hasSelection ([2fe1f4d](https://github.com/CoCreate-app/CoCreate-element-config/commit/2fe1f4d515c1c4411f0be8f984b1b68497b03a92))
+
 ## [1.2.3](https://github.com/CoCreate-app/CoCreate-element-config/compare/v1.2.2...v1.2.3) (2021-10-06)
 
 
