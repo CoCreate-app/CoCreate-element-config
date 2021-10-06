@@ -1,4 +1,5 @@
 import observer from '@cocreate/observer';
+import {hasSelection} from '@cocreate/selection';
 
 function init() {
     let elements = document.querySelectorAll('[config-target]');
@@ -67,7 +68,7 @@ export function checkElementConfig(element, options, elementConfig){
 		for(let option of options) {
 			if (option == 'editable') {
 				if(config[option] === true) {
-					if (CoCreate.text.hasSelection(element) && element.closest('[contenteditable="true"]'))
+					if (hasSelection(element) && element.closest('[contenteditable="true"]'))
 						return true;
 					else return;
 				}
