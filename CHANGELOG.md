@@ -1,3 +1,10 @@
+## [1.2.11](https://github.com/CoCreate-app/CoCreate-element-config/compare/v1.2.10...v1.2.11) (2021-10-16)
+
+
+### Bug Fixes
+
+* update socket package to fix bug in docs ([9be777c](https://github.com/CoCreate-app/CoCreate-element-config/commit/9be777c0257ad0aa99268a320306f2fd79a92f62))
+
 ## [1.2.10](https://github.com/CoCreate-app/CoCreate-element-config/compare/v1.2.9...v1.2.10) (2021-10-15)
 
 
