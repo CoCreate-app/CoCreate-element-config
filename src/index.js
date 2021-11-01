@@ -14,7 +14,16 @@ function initElements(elements) {
 function initElement(element) {
 	let targetSelector = element.getAttribute('config-target');
 	if (!targetSelector) return;
-    let targetElements = document.querySelectorAll(targetSelector);
+	let targetDocument = document;
+
+	if(targetSelector.indexOf(';') !== -1) {
+		let documentSelector;
+		[documentSelector, targetSelector] = targetSelector.split(';');
+		let frame = document.querySelector(documentSelector);
+		if (frame)
+		 	targetDocument = frame.contentDocument;
+	}
+    let targetElements = targetDocument.querySelectorAll(targetSelector);
     for (let targetElement of targetElements) {
     	targetElement.elementConfig = getElementConfig(element);
     	targetElement.setAttribute('config', '');
@@ -28,14 +37,16 @@ function getElementConfig(element){
 	    let configItems = configString.replace(/},/g, '}},').split('},');
 	    for( let item of configItems){
 	        item = item.replace(/\s+/g, ' ').replace(/;/g, '').replace(/\*/g, '*').replace(/\"/g, '"').replace(/\'/g, "'").trim()
-	        
-	        var jsonStr = item.replace(/(\w+:)|(\w+ :)/g, function(s) {
-	          return '"' + s.substring(0, s.length-1) + '":';
-	        });
-	        
-	        var obj = JSON.parse(jsonStr);
+	        if(item) {
+		        var jsonStr = item.replace(/(\w+:)|(\w+ :)/g, function(s) {
+		          return '"' + s.substring(0, s.length-1) + '":';
+		        });
+		        
+		        var obj = JSON.parse(jsonStr);
 	        elementConfig.push(obj);
+	        }
 	    }
+	    console.log(elementConfig);
 	}
 	else {
 		let children = element.children;
@@ -48,6 +59,7 @@ function getElementConfig(element){
 			elementConfig.push(configItem)
 		}
 	}
+	console.log(elementConfig)
 	return elementConfig.reverse();
 }
 
@@ -59,7 +71,7 @@ export function checkElementConfig(element, options, elementConfig){
 		configedEl = element.ownerDocument;
 	}
 	else {
-		configedEl = element.closest('[config]');
+		configedEl = element.closest('[contenteditable]');
 		if(configedEl)
 			elementConfig =	configedEl.elementConfig;
 		else return;
@@ -67,13 +79,13 @@ export function checkElementConfig(element, options, elementConfig){
 	for(let config of configMatch(elementConfig, element)) {
 		for(let option of options) {
 			if (option == 'editable') {
-				if(config[option] === true) {
+				if(config[option] == true || config[option] == 'true') {
 					if (hasSelection(element) && element.closest('[contenteditable="true"]'))
 						return true;
 					else return;
 				}
 			}
-			else if(config[option] === true) {
+			else if(config[option] == true || config[option] == 'true') {
 				return true;
 			}
 			// else if (config[option]){
