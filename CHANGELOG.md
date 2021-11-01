@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/CoCreate-app/CoCreate-element-config/compare/v1.2.14...v1.3.0) (2021-11-01)
+
+
+### Features
+
+* config-target can be an element in another document ([f8495ec](https://github.com/CoCreate-app/CoCreate-element-config/commit/f8495ec268be196aa66a3216db82187475bfb350))
+
 ## [1.2.14](https://github.com/CoCreate-app/CoCreate-element-config/compare/v1.2.13...v1.2.14) (2021-11-01)
 
 
