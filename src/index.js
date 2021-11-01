@@ -36,7 +36,7 @@ function getElementConfig(element){
 		let configString = element.innerHTML.trim().substring(1).replace(/\];/g, ']').slice(0, -1);
 	    let configItems = configString.replace(/},/g, '}},').split('},');
 	    for( let item of configItems){
-	        item = item.replace(/\s+/g, ' ').replace(/;/g, '').replace(/\*/g, '*').replace(/\"/g, '"').replace(/\'/g, "'").trim()
+	        item = item.replace(/\s+/g, ' ').replace(/;/g, '').replace(/\*/g, '*').replace(/\"/g, '"').replace(/\'/g, "'").trim();
 	        if(item) {
 		        var jsonStr = item.replace(/(\w+:)|(\w+ :)/g, function(s) {
 		          return '"' + s.substring(0, s.length-1) + '":';
@@ -56,10 +56,9 @@ function getElementConfig(element){
 			for (let attribute of attributes) {
 				configItem[attribute.name] = attribute.value;
 			}
-			elementConfig.push(configItem)
+			elementConfig.push(configItem);
 		}
 	}
-	console.log(elementConfig)
 	return elementConfig.reverse();
 }
 
