@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/CoCreate-app/CoCreate-element-config/compare/v1.3.0...v1.3.1) (2021-11-02)
+
+
+### Bug Fixes
+
+* remove console.log ([0535d63](https://github.com/CoCreate-app/CoCreate-element-config/commit/0535d632d17c7a0f631dcb726d42347152f170c0))
+
 # [1.3.0](https://github.com/CoCreate-app/CoCreate-element-config/compare/v1.2.14...v1.3.0) (2021-11-01)
 
 
