@@ -46,7 +46,6 @@ function getElementConfig(element){
 	        elementConfig.push(obj);
 	        }
 	    }
-	    console.log(elementConfig);
 	}
 	else {
 		let children = element.children;
