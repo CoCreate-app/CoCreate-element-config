@@ -1,3 +1,10 @@
+## [1.3.2](https://github.com/CoCreate-app/CoCreate-element-config/compare/v1.3.1...v1.3.2) (2021-11-03)
+
+
+### Bug Fixes
+
+* removed console.log display array of element config ([d67d240](https://github.com/CoCreate-app/CoCreate-element-config/commit/d67d2402b5184283b6b654e7d787fd21a09681b4))
+
 ## [1.3.1](https://github.com/CoCreate-app/CoCreate-element-config/compare/v1.3.0...v1.3.1) (2021-11-02)
 
 
