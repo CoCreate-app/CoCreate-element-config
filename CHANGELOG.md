@@ -1,3 +1,10 @@
+## [1.3.6](https://github.com/CoCreate-app/CoCreate-element-config/compare/v1.3.5...v1.3.6) (2021-11-07)
+
+
+### Bug Fixes
+
+* add init() directly above export default to fix bug in firefox ([2d88ede](https://github.com/CoCreate-app/CoCreate-element-config/commit/2d88ede32125d975c4d0a87c106fcdcf5fa7035d))
+
 ## [1.3.5](https://github.com/CoCreate-app/CoCreate-element-config/compare/v1.3.4...v1.3.5) (2021-11-06)
 
 
