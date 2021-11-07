@@ -110,9 +110,6 @@ export function* configMatch(elementConfig, element) {
   return;
 }
 	
-
-init();
-
 observer.init({
     name: 'CoCreateAddedNodes',
     observe: ['addedNodes'],
@@ -158,5 +155,6 @@ observer.init({
     }
 });
 
+init();
 
 export default {checkElementConfig, configMatch};
