@@ -1,3 +1,10 @@
+## [1.3.13](https://github.com/CoCreate-app/CoCreate-element-config/compare/v1.3.12...v1.3.13) (2021-11-20)
+
+
+### Bug Fixes
+
+* remove cdn.CoCreate.min.css ([c511a71](https://github.com/CoCreate-app/CoCreate-element-config/commit/c511a716398c2587d2a8d55f779f3d890fa0b9b2))
+
 ## [1.3.12](https://github.com/CoCreate-app/CoCreate-element-config/compare/v1.3.11...v1.3.12) (2021-11-20)
 
 
