@@ -1,3 +1,10 @@
+## [1.3.16](https://github.com/CoCreate-app/CoCreate-element-config/compare/v1.3.15...v1.3.16) (2021-11-26)
+
+
+### Bug Fixes
+
+* add nav and sidenav to docs ([794fec1](https://github.com/CoCreate-app/CoCreate-element-config/commit/794fec16ee9b65cb1ca2a3c184dfafb3d066f9b8))
+
 ## [1.3.15](https://github.com/CoCreate-app/CoCreate-element-config/compare/v1.3.14...v1.3.15) (2021-11-26)
 
 
