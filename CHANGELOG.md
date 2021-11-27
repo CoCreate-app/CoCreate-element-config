@@ -1,3 +1,10 @@
+## [1.3.19](https://github.com/CoCreate-app/CoCreate-element-config/compare/v1.3.18...v1.3.19) (2021-11-27)
+
+
+### Bug Fixes
+
+* update dependencies ([4bcd683](https://github.com/CoCreate-app/CoCreate-element-config/commit/4bcd6830c57228f79d84eb98e7671111cf3dab0a))
+
 ## [1.3.18](https://github.com/CoCreate-app/CoCreate-element-config/compare/v1.3.17...v1.3.18) (2021-11-27)
 
 
