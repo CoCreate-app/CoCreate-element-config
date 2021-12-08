@@ -84,7 +84,7 @@ export function checkElementConfig(element, options, elementConfig){
 				}
 			}
 			else if(config[option] == true || config[option] == 'true') {
-				return true;
+				return config;
 			}
 			// else if (config[option]){
 			// 	var func = new Function(config[option]);
