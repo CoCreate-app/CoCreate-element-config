@@ -64,15 +64,21 @@ function getElementConfig(element){
 	
 export function checkElementConfig(element, options, elementConfig){
 	let configedEl;
-	if (!elementConfig && element.ownerDocument.elementConfig) {
-		elementConfig =	element.ownerDocument.elementConfig;
-		configedEl = element.ownerDocument;
-	}
-	else {
-		configedEl = element.closest('[contenteditable]');
-		if(configedEl)
-			elementConfig =	configedEl.elementConfig;
-		else return;
+	if (!elementConfig){
+		if (element.ownerDocument.elementConfig) {
+			elementConfig =	element.ownerDocument.elementConfig;
+			configedEl = element.ownerDocument;
+		}
+		else if(element.ownerDocument.documentElement.elementConfig) {
+			elementConfig =	element.ownerDocument.documentElement.elementConfig;
+			configedEl = element.ownerDocument.documentElement;
+		}
+		else {
+			configedEl = element.closest('[contenteditable]');
+			if(configedEl)
+				elementConfig =	configedEl.elementConfig;
+			else return;
+		}
 	}
 	for(let config of configMatch(elementConfig, element)) {
 		for(let option of options) {
