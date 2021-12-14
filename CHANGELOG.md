@@ -1,3 +1,11 @@
+## [1.3.21](https://github.com/CoCreate-app/CoCreate-element-config/compare/v1.3.20...v1.3.21) (2021-12-14)
+
+
+### Bug Fixes
+
+* find configEl when contenteditable nested ([77f864e](https://github.com/CoCreate-app/CoCreate-element-config/commit/77f864e7b94f69cfdb50f3534662e5214d4d3283))
+* update dependencies ([bbd0632](https://github.com/CoCreate-app/CoCreate-element-config/commit/bbd0632eec9e583ddb26494c8cb69dd70e77b9b3))
+
 ## [1.3.20](https://github.com/CoCreate-app/CoCreate-element-config/compare/v1.3.19...v1.3.20) (2021-12-08)
 
 
