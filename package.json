@@ -1,6 +1,6 @@
 {
   "name": "@cocreate/element-config",
-  "version": "1.3.26",
+  "version": "1.3.27",
   "description": "A simple element-config component in vanilla javascript. Easily configured using HTML5 attributes and/or JavaScript API.",
   "keywords": [
     "element-config",
