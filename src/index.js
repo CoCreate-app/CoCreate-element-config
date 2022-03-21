@@ -80,28 +80,30 @@ export function checkElementConfig(element, options, elementConfig){
 			else return;
 		}
 	}
-	for(let config of configMatch(elementConfig, element)) {
-		for(let option of options) {
-			if (option == 'editable') {
-				if(config[option] == true || config[option] == 'true') {
-					if (hasSelection(element) && element.closest('[contenteditable="true"]'))
-						return true;
-					else return;
+	if (elementConfig) {
+		for(let config of configMatch(elementConfig, element)) {
+			for(let option of options) {
+				if (option == 'editable') {
+					if(config[option] == true || config[option] == 'true') {
+						if (hasSelection(element) && element.closest('[contenteditable="true"]'))
+							return true;
+						else return;
+					}
 				}
+				else if(config[option] == true || config[option] == 'true') {
+					return config;
+				}
+				// else if (config[option]){
+				// 	var func = new Function(config[option]);
+				// 	if (func(element, option))
+				// 		return true;
+				// }
+				else if (config[option] == 'function'){
+					if (configedEl.configFunctions[option](element, option))
+						return true;
+				}
+				else return false;
 			}
-			else if(config[option] == true || config[option] == 'true') {
-				return config;
-			}
-			// else if (config[option]){
-			// 	var func = new Function(config[option]);
-			// 	if (func(element, option))
-			// 		return true;
-			// }
-			else if (config[option] == 'function'){
-				if (configedEl.configFunctions[option](element, option))
-					return true;
-			}
-			else return false;
 		}
 	}
 }
