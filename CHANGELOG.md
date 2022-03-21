@@ -1,3 +1,10 @@
+## [1.3.31](https://github.com/CoCreate-app/CoCreate-element-config/compare/v1.3.30...v1.3.31) (2022-03-21)
+
+
+### Bug Fixes
+
+* add if elementConfig condition ([b3999a6](https://github.com/CoCreate-app/CoCreate-element-config/commit/b3999a680bdd9249448ba481d7b297c5590b570f))
+
 ## [1.3.30](https://github.com/CoCreate-app/CoCreate-element-config/compare/v1.3.29...v1.3.30) (2022-02-24)
 
 
