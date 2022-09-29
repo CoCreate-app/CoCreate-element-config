@@ -1,3 +1,10 @@
+## [1.3.38](https://github.com/CoCreate-app/CoCreate-element-config/compare/v1.3.37...v1.3.38) (2022-09-29)
+
+
+### Bug Fixes
+
+* config renameed to CoCreateConfig ([a3296ee](https://github.com/CoCreate-app/CoCreate-element-config/commit/a3296ee859ee28dd97f0815c717bf7b0fe9dd8f8))
+
 ## [1.3.37](https://github.com/CoCreate-app/CoCreate-element-config/compare/v1.3.36...v1.3.37) (2022-09-01)
 
 
