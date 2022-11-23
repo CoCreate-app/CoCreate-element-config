@@ -16,7 +16,7 @@ function initElement(element) {
 	if (!targetSelector) return;
 	let targetDocument = document;
 
-	if(targetSelector.indexOf(';') !== -1) {
+	if (targetSelector.indexOf(';') !== -1) {
 		let documentSelector;
 		[documentSelector, targetSelector] = targetSelector.split(';');
 		let frame = document.querySelector(documentSelector);
@@ -37,7 +37,7 @@ function getElementConfig(element){
 	    let configItems = configString.replace(/},/g, '}},').split('},');
 	    for( let item of configItems){
 	        item = item.replace(/\s+/g, ' ').replace(/;/g, '').replace(/\*/g, '*').replace(/\"/g, '"').replace(/\'/g, "'").trim();
-	        if(item) {
+	        if (item) {
 		        var jsonStr = item.replace(/(\w+:)|(\w+ :)/g, function(s) {
 		          return '"' + s.substring(0, s.length-1) + '":';
 		        });
@@ -69,13 +69,13 @@ export function checkElementConfig(element, options, elementConfig){
 			elementConfig =	element.ownerDocument.elementConfig;
 			configedEl = element.ownerDocument;
 		}
-		else if(element.ownerDocument.documentElement.elementConfig) {
+		else if (element.ownerDocument.documentElement.elementConfig) {
 			elementConfig =	element.ownerDocument.documentElement.elementConfig;
 			configedEl = element.ownerDocument.documentElement;
 		}
 		else {
 			configedEl = element.closest('[contenteditable]');
-			if(configedEl)
+			if (configedEl)
 				elementConfig =	configedEl.elementConfig;
 			else return;
 		}
@@ -84,13 +84,13 @@ export function checkElementConfig(element, options, elementConfig){
 		for(let config of configMatch(elementConfig, element)) {
 			for(let option of options) {
 				if (option == 'editable') {
-					if(config[option] == true || config[option] == 'true') {
+					if (config[option] == true || config[option] == 'true') {
 						if (hasSelection(element) && element.closest('[contenteditable="true"]'))
 							return true;
 						else return;
 					}
 				}
-				else if(config[option] == true || config[option] == 'true') {
+				else if (config[option] == true || config[option] == 'true') {
 					return config;
 				}
 				// else if (config[option]){
