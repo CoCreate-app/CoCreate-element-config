@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/CoCreate-app/CoCreate-element-config/compare/v1.3.90...v1.4.0) (2023-03-16)
+
+
+### Features
+
+* replaced get-value and set-value with a super charged version of CoCreate-events ([3d89692](https://github.com/CoCreate-app/CoCreate-element-config/commit/3d896925d0839bbc30da5de19bbc2ccd7d067924))
+
 ## [1.3.90](https://github.com/CoCreate-app/CoCreate-element-config/compare/v1.3.89...v1.3.90) (2023-02-01)
 
 
