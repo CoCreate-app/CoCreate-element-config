@@ -1,3 +1,10 @@
+## [1.4.4](https://github.com/CoCreate-app/CoCreate-element-config/compare/v1.4.3...v1.4.4) (2023-04-11)
+
+
+### Bug Fixes
+
+* renamed domains to hosts ([b5799ce](https://github.com/CoCreate-app/CoCreate-element-config/commit/b5799ceaf5faa3ff0460164a2abe517c895690f7))
+
 ## [1.4.3](https://github.com/CoCreate-app/CoCreate-element-config/compare/v1.4.2...v1.4.3) (2023-03-30)
 
 
