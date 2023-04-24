@@ -1,3 +1,10 @@
+## [1.5.3](https://github.com/CoCreate-app/CoCreate-element-config/compare/v1.5.2...v1.5.3) (2023-04-24)
+
+
+### Bug Fixes
+
+* workflow node version updated  16 ([3b03daf](https://github.com/CoCreate-app/CoCreate-element-config/commit/3b03daf736341464c106fc3ef4b3f5a5664e94f3))
+
 ## [1.5.2](https://github.com/CoCreate-app/CoCreate-element-config/compare/v1.5.1...v1.5.2) (2023-04-24)
 
 
