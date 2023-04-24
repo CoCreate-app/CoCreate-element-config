@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/CoCreate-app/CoCreate-element-config/compare/v1.4.6...v1.5.0) (2023-04-24)
+
+
+### Features
+
+* added pwa manifest ([7a7e51e](https://github.com/CoCreate-app/CoCreate-element-config/commit/7a7e51e465fb5667f7057c125cb8d7108cc8b83e))
+
 ## [1.4.6](https://github.com/CoCreate-app/CoCreate-element-config/compare/v1.4.5...v1.4.6) (2023-04-11)
 
 
