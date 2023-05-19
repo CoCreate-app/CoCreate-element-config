@@ -1,3 +1,11 @@
+## [1.5.9](https://github.com/CoCreate-app/CoCreate-element-config/compare/v1.5.8...v1.5.9) (2023-05-19)
+
+
+### Bug Fixes
+
+* apikey renamed to key ([a5528fd](https://github.com/CoCreate-app/CoCreate-element-config/commit/a5528fdc4e09bf92e036ca1f390470a20a029ca9))
+* update packages to latest version. This commit updates various packages in the dependencies section of the package.json file to their latest published versions, thereby fixing multiple bugs and improving overall performance. ([d958a1a](https://github.com/CoCreate-app/CoCreate-element-config/commit/d958a1a284dc9b30b00e7d67905942f96e8ec9ec))
+
 ## [1.5.8](https://github.com/CoCreate-app/CoCreate-element-config/compare/v1.5.7...v1.5.8) (2023-05-06)
 
 
