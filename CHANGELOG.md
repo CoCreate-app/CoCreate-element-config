@@ -1,3 +1,11 @@
+## [1.5.11](https://github.com/CoCreate-app/CoCreate-element-config/compare/v1.5.10...v1.5.11) (2023-06-02)
+
+
+### Bug Fixes
+
+* format demo html ([f22624c](https://github.com/CoCreate-app/CoCreate-element-config/commit/f22624ca2cadc4cfdf163431067b5fdd5b2288fd))
+* Update dependencies versions for [@cocreate](https://github.com/cocreate) libraries ([f5a865f](https://github.com/CoCreate-app/CoCreate-element-config/commit/f5a865f9c316017b31dd7033a15acebef77ca8d2))
+
 ## [1.5.10](https://github.com/CoCreate-app/CoCreate-element-config/compare/v1.5.9...v1.5.10) (2023-05-21)
 
 
