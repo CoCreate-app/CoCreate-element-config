@@ -1,36 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" href="https://cdn.cocreate.app/favicon.ico" type="image/ico" sizes="16x16">
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            rel="icon"
+            href="https://cdn.cocreate.app/favicon.ico"
+            type="image/ico"
+            sizes="16x16" />
         <title>element-config | CoCreateJS</title>
 
-		<link rel="manifest" href="/manifest.webmanifest" />
-	</head>
+        <link rel="manifest" href="/manifest.webmanifest" />
+    </head>
 
     <body id="a">
         <h1 id="h1">hello 1</h1>
         <h2 id="h2">hello 2</h2>
-        
-        <element-config config-target="#d" id="b" collection="" document_id="" name="" style="display:none">
-            <config selector="*" editable="true" draggable="true" selectable="true" hoverable="true" mouseover="true"></config>
-            <config selector="h1, h2" editable="true" draggable="true" selectable="true" hoverable="true" mouseover="true"></config>
+
+        <element-config
+            config-target="#d"
+            id="b"
+            collection=""
+            document_id=""
+            name=""
+            style="display: none">
+            <config
+                selector="*"
+                editable="true"
+                draggable="true"
+                selectable="true"
+                hoverable="true"
+                mouseover="true"></config>
+            <config
+                selector="h1, h2"
+                editable="true"
+                draggable="true"
+                selectable="true"
+                hoverable="true"
+                mouseover="true"></config>
         </element-config>
 
         <script id="c" config-target="#a" collection="" document_id="" name="">
             [
-                { selector: "*", draggable: true, droppable: true, selectable: true, hoverable: true},
-                { selector: "h1, h2", draggable: true, droppable: true, selectable: true, hoverable: true}
+                {
+                    selector: "*",
+                    draggable: true,
+                    droppable: true,
+                    selectable: true,
+                    hoverable: true,
+                },
+                {
+                    selector: "h1, h2",
+                    draggable: true,
+                    droppable: true,
+                    selectable: true,
+                    hoverable: true,
+                },
             ];
         </script>
 
         <!--<script src="https://cdn.cocreate.app/element-config/latest/CoCreate-element-config.min.js"></script>-->
         <script src="https://cdn.cocreate.app/latest/CoCreate.min.js"></script>
         <!--<script src="../dist/CoCreate-element-config.js"></script>-->
-
     </body>
-
 </html>
