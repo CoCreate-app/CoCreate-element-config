@@ -1,3 +1,11 @@
+## [1.5.13](https://github.com/CoCreate-app/CoCreate-element-config/compare/v1.5.12...v1.5.13) (2023-06-04)
+
+
+### Bug Fixes
+
+* replaced secert GITHUB_TOKEN with GITHUB ([9dc3d90](https://github.com/CoCreate-app/CoCreate-element-config/commit/9dc3d901ee3fb6e6eda665b43e54a71cea2a7244))
+* Update dependencies versions for [@cocreate](https://github.com/cocreate) libraries ([1c2df26](https://github.com/CoCreate-app/CoCreate-element-config/commit/1c2df269a8335522ffa5f1cd5a49312c726eb2c1))
+
 ## [1.5.12](https://github.com/CoCreate-app/CoCreate-element-config/compare/v1.5.11...v1.5.12) (2023-06-04)
 
 
