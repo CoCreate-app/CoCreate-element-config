@@ -1,3 +1,10 @@
+## [1.5.12](https://github.com/CoCreate-app/CoCreate-element-config/compare/v1.5.11...v1.5.12) (2023-06-04)
+
+
+### Bug Fixes
+
+* **semantic-release:** worklow error solved by running node version 14 ([67db7b6](https://github.com/CoCreate-app/CoCreate-element-config/commit/67db7b632077162b6249c1907a2b69e76ec0e18a))
+
 ## [1.5.11](https://github.com/CoCreate-app/CoCreate-element-config/compare/v1.5.10...v1.5.11) (2023-06-02)
 
 
