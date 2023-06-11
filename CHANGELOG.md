@@ -1,3 +1,10 @@
+## [1.5.24](https://github.com/CoCreate-app/CoCreate-element-config/compare/v1.5.23...v1.5.24) (2023-06-11)
+
+
+### Bug Fixes
+
+* testing workflow ([abfa8ef](https://github.com/CoCreate-app/CoCreate-element-config/commit/abfa8efd3879e4caa378370b50dc39287c7f0f06))
+
 ## [1.5.23](https://github.com/CoCreate-app/CoCreate-element-config/compare/v1.5.22...v1.5.23) (2023-06-11)
 
 
