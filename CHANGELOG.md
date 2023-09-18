@@ -1,3 +1,11 @@
+## [1.8.2](https://github.com/CoCreate-app/CoCreate-element-config/compare/v1.8.1...v1.8.2) (2023-09-18)
+
+
+### Bug Fixes
+
+*  Add path and pathname ([471d6a8](https://github.com/CoCreate-app/CoCreate-element-config/commit/471d6a888f7c5940fdc91a5994ad8607b6e03a2d))
+* Update CoCreate depndencies to latest versions ([f804cc0](https://github.com/CoCreate-app/CoCreate-element-config/commit/f804cc0b6c6ef6d0cee4f97c8ff7908c3fcc146c))
+
 ## [1.8.1](https://github.com/CoCreate-app/CoCreate-element-config/compare/v1.8.0...v1.8.1) (2023-08-21)
 
 
