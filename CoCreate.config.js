@@ -12,8 +12,7 @@ module.exports = {
                 "pathname": "/docs/element-config/index.html",
                 "src": "{{./docs/index.html}}",
                 "host": [
-                    "*",
-                    "general.cocreate.app"
+                    "*"
                 ],
                 "directory": "element-config",
                 "content-type": "{{content-type}}",
