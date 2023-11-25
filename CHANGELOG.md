@@ -1,3 +1,15 @@
+# [1.10.0](https://github.com/CoCreate-app/CoCreate-element-config/compare/v1.9.0...v1.10.0) (2023-11-25)
+
+
+### Bug Fixes
+
+* update nav, edit button and css path ([7d99b89](https://github.com/CoCreate-app/CoCreate-element-config/commit/7d99b8940c787a4d255aa2403270d531e398380c))
+
+
+### Features
+
+* upgrade dependencies for latest features and fixes ([e0b38ff](https://github.com/CoCreate-app/CoCreate-element-config/commit/e0b38ff96e13a1de1a710e26a4f060dfabef982f))
+
 # [1.9.0](https://github.com/CoCreate-app/CoCreate-element-config/compare/v1.8.9...v1.9.0) (2023-11-19)
 
 
