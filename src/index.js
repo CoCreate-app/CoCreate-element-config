@@ -41,7 +41,8 @@ function getElementConfig(element) {
                 var jsonStr = item.replace(/(\w+:)|(\w+ :)/g, function (s) {
                     return '"' + s.substring(0, s.length - 1) + '":';
                 });
-
+                jsonStr = jsonStr.replace(/,}/g, '}');
+                jsonStr = jsonStr.replace(/, }/g, '}');
                 var obj = JSON.parse(jsonStr);
                 elementConfig.push(obj);
             }
