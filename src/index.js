@@ -122,7 +122,7 @@ export function* configMatch(elementConfig, element) {
 observer.init({
     name: 'CoCreateAddedNodes',
     observe: ['addedNodes'],
-    target: '[config-selector]',
+    selector: '[config-selector]',
     callback(mutation) {
         initElement(mutation.target);
     }
@@ -131,7 +131,7 @@ observer.init({
 observer.init({
     name: 'CoCreateAddedNodes',
     observe: ['attributes'],
-    target: '[config-selector]',
+    selector: '[config-selector]',
     callback(mutation) {
         initElement(mutation.target);
     }
@@ -140,7 +140,7 @@ observer.init({
 observer.init({
     name: 'CoCreateAddedNodes',
     observe: ['childList'],
-    target: '[config-selector]',
+    selector: '[config-selector]',
     callback(mutation) {
         initElement(mutation.target);
     }
@@ -149,7 +149,7 @@ observer.init({
 observer.init({
     name: 'CoCreateAddedNodes',
     observe: ['addedNodes'],
-    target: 'config',
+    selector: 'config',
     callback(mutation) {
         initElement(mutation.target.parentElement);
     }
@@ -158,7 +158,7 @@ observer.init({
 observer.init({
     name: 'CoCreateAddedNodes',
     observe: ['attributes'],
-    target: 'config',
+    selector: 'config',
     callback(mutation) {
         initElement(mutation.target.parentElement);
     }
