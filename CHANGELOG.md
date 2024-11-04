@@ -1,3 +1,17 @@
+# [1.12.0](https://github.com/CoCreate-app/CoCreate-element-config/compare/v1.11.2...v1.12.0) (2024-11-04)
+
+
+### Bug Fixes
+
+* json string format ([1e5e3b7](https://github.com/CoCreate-app/CoCreate-element-config/commit/1e5e3b7d3eb99e36d53ef5021884d66de155662f))
+* observer taget has been renamed to selector ([04e5a92](https://github.com/CoCreate-app/CoCreate-element-config/commit/04e5a929c0b969d427e1c5555d837f448f3d37e1))
+* pretier.config.js and file formating ([479a7db](https://github.com/CoCreate-app/CoCreate-element-config/commit/479a7dbd7eaa5b846d2f698e7f44be127a226c86))
+
+
+### Features
+
+* add prettier.config.js and format files ([11d5e8a](https://github.com/CoCreate-app/CoCreate-element-config/commit/11d5e8aebac97f87b6ad314c63953eeeecbc0d17))
+
 ## [1.11.2](https://github.com/CoCreate-app/CoCreate-element-config/compare/v1.11.1...v1.11.2) (2024-06-12)
 
 
