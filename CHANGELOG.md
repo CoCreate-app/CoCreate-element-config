@@ -1,3 +1,10 @@
+## [1.12.1](https://github.com/CoCreate-app/CoCreate-element-config/compare/v1.12.0...v1.12.1) (2025-04-11)
+
+
+### Bug Fixes
+
+* update observer obseve param to type and and attributeName to attributeFilter ([deeb78a](https://github.com/CoCreate-app/CoCreate-element-config/commit/deeb78afc2ec4eabf0d6c54cddd41d198a556257))
+
 # [1.12.0](https://github.com/CoCreate-app/CoCreate-element-config/compare/v1.11.2...v1.12.0) (2024-11-04)
 
 
