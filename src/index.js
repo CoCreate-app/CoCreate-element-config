@@ -2,7 +2,7 @@ import observer from "@cocreate/observer";
 import { hasSelection } from "@cocreate/selection";
 
 function init() {
-	let elements = document.querySelectorAll("[config-selector]");
+	let elements = document.querySelectorAll("[config-query]");
 	initElements(elements);
 }
 
@@ -11,7 +11,7 @@ function initElements(elements) {
 }
 
 function initElement(element) {
-	let targetSelector = element.getAttribute("config-selector");
+	let targetSelector = element.getAttribute("config-query");
 	if (!targetSelector) return;
 	let targetDocument = document;
 
@@ -126,7 +126,7 @@ export function* configMatch(elementConfig, element) {
 observer.init({
 	name: "CoCreateAddedNodes",
 	types: ["addedNodes"],
-	selector: "[config-selector]",
+	selector: "[config-query]",
 	callback(mutation) {
 		initElement(mutation.target);
 	}
@@ -135,7 +135,7 @@ observer.init({
 observer.init({
 	name: "CoCreateAddedNodes",
 	types: ["attributes"],
-	selector: "[config-selector]",
+	selector: "[config-query]",
 	callback(mutation) {
 		initElement(mutation.target);
 	}
@@ -144,7 +144,7 @@ observer.init({
 observer.init({
 	name: "CoCreateAddedNodes",
 	types: ["addedNodes"],
-	selector: "[config-selector]",
+	selector: "[config-query]",
 	callback(mutation) {
 		initElement(mutation.target);
 	}
